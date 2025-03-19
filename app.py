@@ -12,9 +12,6 @@ def result():
         question = data.get("question")
         category = data.get("incomecategory")
 
-        # # Debugging - log received values
-        # print("Received from frontend:", data)
-
         if not question or not category:  # Ensure required fields are present
             return jsonify({"error": "Missing required fields"}), 400
 
